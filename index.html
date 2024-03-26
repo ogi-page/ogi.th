@@ -1,0 +1,2599 @@
+<!DOCTYPE html>
+<html lang="th" dir="ltr" itemscope itemtype="https://schema.org/Game">
+  <head>
+    <meta charset="UTF-8">
+
+    <title>หมากรุกโกมาโย (王棋) — เกมกลยุทธ์ที่ได้รับแรงบันดาลใจจากโชกิ</title>
+
+    <!-- Basic document metadata -->
+    <meta name="author" content="Cyril Veltin">
+    <meta name="description"
+          content="หมากรุกโกมาโย (王棋) หรือเรียกอีกชื่อว่าเกมของราชาหรือเกมของเจ้าหญิง เป็นเกมกลยุทธ์ร่วมสมัยที่ได้รับแรงบันดาลใจจากโชกิ ใช้ตัวหมากพลิกกลับได้และการวางหมากบนกระดาน 8×8">
+    <meta name="keywords"
+          content="หมากรุกโกมาโย, 王棋, เกมกลยุทธ์, โชกิ, การวางหมาก, ตัวหมากพลิกกลับได้">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- License metadata -->
+    <meta name="dcterms.rights" content="CC0 1.0 Universal">
+    <meta name="dcterms.license" content="https://creativecommons.org/publicdomain/zero/1.0/">
+    <link rel="license" href="https://creativecommons.org/publicdomain/zero/1.0/">
+    <meta name="license" content="CC0">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="หมากรุกโกมาโย">
+    <meta property="og:title" content="หมากรุกโกมาโย (王棋) — เกมกลยุทธ์ที่ได้รับแรงบันดาลใจจากโชกิ">
+    <meta property="og:description"
+          content="หมากรุกโกมาโย (王棋) เป็นเกมกลยุทธ์ร่วมสมัยที่พัฒนามาจากโชกิ ผสมผสานตัวหมากพลิกกลับได้และการวางหมากบนกระดาน 8×8">
+    <meta property="og:url" content="https://th.ogi.page/">
+    <meta property="og:locale" content="th_TH">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="fr_FR">
+    <meta property="og:locale:alternate" content="ja_JP">
+    <meta property="og:locale:alternate" content="zh_CN">
+
+    <meta property="og:image" content="https://th.ogi.page/img/ogi-starting-setup-large.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="828">
+    <meta property="og:image:height" content="828">
+    <meta property="og:image:alt" content="ตำแหน่งเริ่มต้นของเกมหมากรุกโกมาโย">
+
+    <meta property="og:image" content="https://th.ogi.page/img/ogi-starting-setup-small.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:height" content="300">
+    <meta property="og:image:alt" content="ตำแหน่งเริ่มต้นของเกมหมากรุกโกมาโย">
+
+    <meta property="og:image" content="https://th.ogi.page/img/ogi-starting-setup-fallback.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="828">
+    <meta property="og:image:height" content="828">
+    <meta property="og:image:alt" content="ตำแหน่งเริ่มต้นของเกมหมากรุกโกมาโย">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://th.ogi.page/img/ogi-starting-setup-large.webp">
+    <meta name="twitter:image:alt" content="ตำแหน่งเริ่มต้นของเกมหมากรุกโกมาโย">
+    <meta name="twitter:title" content="หมากรุกโกมาโย (王棋) — เกมกลยุทธ์">
+    <meta name="twitter:description"
+          content="เกมกลยุทธ์ร่วมสมัยที่ได้รับแรงบันดาลใจจากโชกิ ใช้ตัวหมากพลิกกลับได้และการวางหมาก">
+
+    <!-- Language alternates -->
+    <link rel="alternate" hreflang="x-default" href="https://ogi.page/">
+    <link rel="alternate" hreflang="en" href="https://en.ogi.page/">
+    <link rel="alternate" hreflang="fr" href="https://fr.ogi.page/">
+    <link rel="alternate" hreflang="ja" href="https://ja.ogi.page/">
+    <link rel="alternate" hreflang="th" href="https://th.ogi.page/">
+    <link rel="alternate" hreflang="zh" href="https://zh.ogi.page/">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://th.ogi.page/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" sizes="any" href="favicon.svg">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Ōgi Page">
+    <link rel="manifest" href="site.webmanifest">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/props.css" media="all">
+    <link rel="stylesheet" href="css/all.css" media="all">
+    <link rel="stylesheet" href="css/print.css" media="print">
+    <link rel="stylesheet" href="css/screen.css" media="screen">
+
+    <!-- Theme color adaptatif -->
+    <meta name="theme-color" content="MistyRose" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#010005" media="(prefers-color-scheme: dark)">
+
+    <!-- Structured data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Game",
+        "@id": "https://th.ogi.page/#game",
+        "name": "หมากรุกโกมาโย",
+        "alternateName": [
+          "王棋",
+          "Ōgi",
+          "เกมของราชา",
+          "เกมของเจ้าหญิง"
+        ],
+        "description": "หมากรุกโกมาโย เป็นเกมกลยุทธ์ร่วมสมัยที่พัฒนามาจากโชกิ ใช้ตัวหมากพลิกกลับได้และการวางหมากบนกระดาน 8×8",
+        "url": "https://th.ogi.page/",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://th.ogi.page/"
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://th.ogi.page/img/ogi-starting-setup-large.webp",
+          "width": 828,
+          "height": 828
+        },
+        "inLanguage": "th",
+        "genre": ["เกมกลยุทธ์", "เกมกลยุทธ์เชิงผสมผสานนามธรรม"],
+        "numberOfPlayers": {
+          "@type": "QuantitativeValue",
+          "minValue": 2,
+          "maxValue": 2
+        },
+        "gameItem": [
+          "กระดาน 8×8 (64 ช่อง)",
+          "ขุน 2 ตัว (หรือขุนหยก)",
+          "เจ้าหญิง 2 ตัว",
+          "เรือ 2 ตัว",
+          "โคน 2 ตัว",
+          "เงิน 4 ตัว",
+          "ม้า 4 ตัว",
+          "หอก 4 ตัว",
+          "เบี้ย 16 ตัว"
+        ],
+        "isBasedOn": {
+          "@type": "Game",
+          "name": "โชกิ",
+          "sameAs": "https://www.wikidata.org/wiki/Q131375"
+        },
+        "keywords": "หมากรุกโกมาโย, Ōgi, 王棋, เกมกลยุทธ์, โชกิ, การวางหมาก, ตัวหมากพลิกกลับได้, กระดาน 8×8, โกมาโย",
+        "creator": {
+          "@type": "Person",
+          "name": "Cyril Veltin",
+          "url": "https://cyrilvelt.in/"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Ōgi Project"
+        },
+        "datePublished": "2024-03-26",
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "copyrightNotice": "สาธารณสมบัติ",
+        "copyrightHolder": {
+          "@type": "Person",
+          "name": "Cyril Veltin"
+        },
+        "sameAs": [
+          "https://en.ogi.page/",
+          "https://fr.ogi.page/",
+          "https://ja.ogi.page/",
+          "https://zh.ogi.page/"
+        ]
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <img src="favicon.svg" alt="โลโก้หมากรุกโกมาโย" height="1024" width="1024">
+      <strong title="王棋">หมากรุกโกมาโย</strong>
+    </header>
+
+    <article>
+      <header>
+        <h1>เกมของราชา</h1>
+
+        <p>
+          <strong>หมากรุกโกมาโย</strong> เป็น<strong>เกมกลยุทธ์บนกระดาน</strong>
+          ร่วมสมัยที่พัฒนามาจาก<em>โชกิ</em> (หมากรุกญี่ปุ่น)
+          เกมนี้ยังคงหลักการของ<strong>ตัวหมากพลิกกลับได้</strong> (การเลื่อนขั้น) และ
+          <strong>การนำตัวหมากที่ถูกกินกลับมาใช้</strong>ด้วย<em>การวางหมาก</em> พร้อมทั้งปรับให้เข้ากับ
+          <strong>กระดาน 8×8</strong> และมีการเพิ่มตัวหมากพิเศษเข้ามา
+        </p>
+
+        <p>
+          ชื่อ หมากรุกโกมาโย มาจากคำว่า
+          <ruby lang="ja">王<rp>(</rp><rt>ō</rt><rp>)</rp></ruby><ruby lang="ja">棋<rp>(</rp><rt>gi</rt><rp>)</rp></ruby> ในภาษาญี่ปุ่น
+          ซึ่งแปลตรงตัวว่า <q>เกมของราชา</q>
+          ในชุมชนผู้เล่น เกมนี้ยังถูกเรียกว่า
+          <q><a href="https://th.komayo.page/len/" hreflang="th" rel="external related" title="เกมของเจ้าหญิง">เกมของเจ้าหญิง</a></q>
+          ซึ่งสะท้อนถึงนิทานพื้นบ้านที่ห้อมล้อมเกมนี้
+        </p>
+      </header>
+
+      <nav aria-label="สารบัญ">
+        <h2>สารบัญ</h2>
+
+        <ol>
+          <li><a href="#game-components">องค์ประกอบของเกม</a></li>
+          <li><a href="#rules-of-the-game">กฎการเล่น</a></li>
+          <li><a href="#cultural-narrative-and-urban-legend">เรื่องเล่าทางวัฒนธรรมและตำนานเมือง</a></li>
+        </ol>
+      </nav>
+
+      <section id="game-components">
+        <h2>องค์ประกอบของเกม</h2>
+
+        <p>
+          หมากรุกโกมาโย เป็นเกมที่ผู้เล่นสองคนนั่งหันหน้าเข้าหากันรอบกระดาน 8×8 ซึ่งมีทั้งหมด 64 ช่อง
+          ตามธรรมเนียมของเกมกระดานญี่ปุ่น ผู้เล่นจะถูกเรียกว่า
+          <ruby>先手<rp>(</rp><rt>Sente</rt><rp>)</rp></ruby> คือผู้เล่นที่เดินก่อน และ
+          <ruby>後手<rp>(</rp><rt>Gote</rt><rp>)</rp></ruby> คือผู้เล่นที่เดินตาม
+        </p>
+
+        <p>
+          ในโลกตะวันตก Sente และ Gote มักถูกเรียกว่า <i>ดำ</i> และ <i>ขาว</i>
+          โดยดำเป็นฝ่ายเดินก่อน
+        </p>
+
+        <p>
+          ผู้เล่นแต่ละคนเริ่มเกมด้วยตัวหมาก 18 ตัว
+          ตัวหมากเหล่านี้มีลักษณะแบน เป็นรูปห้าเหลี่ยมไม่สม่ำเสมอ คล้ายกับปลายลูกศร
+          ตัวหมากมีหลายขนาดที่แตกต่างกันเล็กน้อย
+          ตัวหมากของผู้เล่นทั้งสองฝ่ายมีลักษณะภายนอกเหมือนกัน โดยปลายแหลมที่หันไปทางฝั่งตรงข้ามเป็นตัวบ่งบอกว่าตัวหมากเป็นของใคร
+          ตัวหมากเรียงตามลำดับความสำคัญจากมากที่สุด (ขนาดใหญ่ที่สุด) ไปน้อยที่สุด (ขนาดเล็กที่สุด) ดังนี้:
+        </p>
+
+        <ul>
+          <li>ขุน 1 ตัว</li>
+          <li>เจ้าหญิง 1 ตัว</li>
+          <li>เรือ 1 ตัว</li>
+          <li>โคน 1 ตัว</li>
+          <li>เงิน 2 ตัว</li>
+          <li>ม้า 2 ตัว</li>
+          <li>หอก 2 ตัว</li>
+          <li>เบี้ย 8 ตัว</li>
+        </ul>
+
+        <p>
+          บนตัวหมากแต่ละตัวจะมีชื่อเขียนเป็นอักษรคันจิด้วยหมึกสีดำ
+          ยกเว้นขุน ตัวหมากอื่นๆ จะมีอักษรตัวที่สองเขียนไว้ด้านหลัง ซึ่งแสดงถึงสถานะเลื่อนขั้น
+          เมื่อตัวหมากถูกพลิกไปด้านนี้ระหว่างเกม หมายความว่าตัวหมากได้รับการเลื่อนขั้นและมีความสามารถในการเคลื่อนที่ที่แตกต่างออกไป
+        </p>
+
+        <p>
+          ตัวอย่างบนเรือ:
+        </p>
+
+        <dl class="pieces">
+          <dt>ด้านไม่เลื่อนขั้น (ด้านหน้า)</dt>
+          <dd>
+            <figure>
+              <img data-style="ogi" class="piece"
+                  src="img/sides/first/representations/eastern/rook.svg"
+                  alt="เรือ ด้านไม่เลื่อนขั้น">
+              <figcaption>เรือในสถานะไม่เลื่อนขั้น</figcaption>
+            </figure>
+          </dd>
+
+          <dt>ด้านเลื่อนขั้น (ด้านหลัง)</dt>
+          <dd>
+            <figure>
+              <img data-style="ogi" class="piece"
+                  src="img/sides/first/representations/eastern/promoted-rook.svg"
+                  alt="เรือเลื่อนขั้น ด้านหลัง">
+              <figcaption>เรือในสถานะเลื่อนขั้น</figcaption>
+            </figure>
+          </dd>
+        </dl>
+
+        <p>
+          ขุนสามารถแสดงได้ด้วยอักษรสองตัว คือ <code lang="ja">王</code> และ <code lang="ja">玉</code>
+          อย่างไรก็ตาม ทั้งสองเป็น<strong>ตัวหมากเดียวกัน</strong> (กฎและการเคลื่อนที่เหมือนกัน) เพียงแต่การแสดงต่างกัน
+          โดยทั่วไป <code lang="ja">王</code> จะใช้กับผู้เล่นที่มีอันดับสูงกว่า (หรือแชมป์ครองตำแหน่ง)
+          ในขณะที่ <code lang="ja">玉</code> จะใช้กับผู้เล่นที่มีอันดับต่ำกว่า (หรือผู้ท้าชิง)
+          การเลือกนี้ขึ้นอยู่กับ<strong>สถานะสัมพัทธ์</strong>ของผู้เล่น
+          ตามธรรมเนียม ในเกมที่มีความแตกต่างของอันดับ ผู้เล่นอันดับต่ำกว่า (<ruby lang="ja">下手<rp>(</rp><rt lang="ja-Latn">shitate</rt><rp>)</rp></ruby>) จะใช้ <code lang="ja">玉</code> และเดินก่อน (Sente)
+          ในขณะที่ผู้เล่นอันดับสูงกว่า (<ruby lang="ja">上手<rp>(</rp><rt lang="ja-Latn">uwate</rt><rp>)</rp></ruby>) จะใช้ <code lang="ja">王</code> และเดินทีหลัง (Gote)
+          ในเกมระหว่างผู้เล่นที่มีระดับเท่ากัน ความแตกต่างนี้มักถูกละเลยหรือกำหนดโดยพลการ
+        </p>
+
+        <p>
+          ด้านล่างนี้คือรายการตัวหมาก พร้อมชื่อ อักษรคันจิที่ใช้บนตัวหมาก
+          และตัวย่อสำหรับการบันทึก (โดยรูปแบบเลื่อนขั้นจะมี <code>+</code> นำหน้า)
+          รูปภาพแสดงสองรูปแบบการแสดงที่มีให้เลือก
+        </p>
+
+        <table class="pieces">
+          <caption>
+            ตัวหมาก
+          </caption>
+
+          <colgroup>
+            <col>
+            <col span="4">
+            <col span="4">
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th scope="col" rowspan="2">ชื่อ</th>
+              <th scope="colgroup" colspan="4">ไม่เลื่อนขั้น</th>
+              <th scope="colgroup" colspan="4">เลื่อนขั้น</th>
+            </tr>
+
+            <tr>
+              <th scope="col">ตัวย่อ</th>
+              <th scope="col">คันจิ</th>
+              <th scope="col">รูป (แบบตะวันออก)</th>
+              <th scope="col">รูป (แบบตะวันตก)</th>
+
+              <th scope="col">ตัวย่อ</th>
+              <th scope="col">คันจิ</th>
+              <th scope="col">รูป (แบบตะวันออก)</th>
+              <th scope="col">รูป (แบบตะวันตก)</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- ขุน (王) -->
+            <tr>
+              <th scope="row">ขุน</th>
+              <td><code>K^</code></td>
+              <td><code lang="ja">王</code></td>
+              <td>
+                <img data-style="ogi" class="piece"
+                    src="img/sides/first/representations/eastern/king.svg"
+                    alt="ขุน (王, แบบตะวันออก)">
+              </td>
+              <td>
+                <img data-style="ogi" class="piece"
+                    src="img/sides/first/representations/western/king.svg"
+                    alt="ขุน (แบบตะวันตก)">
+              </td>
+              <td aria-label="ไม่มี">—</td>
+              <td aria-label="ไม่มี">—</td>
+              <td aria-label="ไม่มี">—</td>
+              <td aria-label="ไม่มี">—</td>
+            </tr>
+
+            <!-- ขุนหยก (玉) -->
+            <tr>
+              <th scope="row">ขุนหยก</th>
+              <td><code>K^'</code></td>
+              <td><code lang="ja">玉</code></td>
+              <td>
+                <img data-style="ogi" class="piece"
+                    src="img/sides/first/representations/eastern/jeweled-king.svg"
+                    alt="ขุนหยก (玉, แบบตะวันออก)">
+              </td>
+              <td>
+                <img data-style="ogi" class="piece"
+                    src="img/sides/first/representations/western/king.svg"
+                    alt="ขุนหยก (แบบตะวันตก)">
+              </td>
+              <td aria-label="ไม่มี">—</td>
+              <td aria-label="ไม่มี">—</td>
+              <td aria-label="ไม่มี">—</td>
+              <td aria-label="ไม่มี">—</td>
+            </tr>
+
+            <tr>
+              <th scope="row">เจ้าหญิง</th>
+              <td><code>I</code></td>
+              <td><code lang="ja">姫</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/princess.svg" alt="เจ้าหญิง (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/princess.svg" alt="เจ้าหญิง (แบบตะวันตก)"></td>
+              <td><code>+I</code></td>
+              <td><code lang="ja">神</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-princess.svg" alt="เจ้าหญิงเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-princess.svg" alt="เจ้าหญิงเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+
+            <tr>
+              <th scope="row">เรือ</th>
+              <td><code>R</code></td>
+              <td><code lang="ja">飛</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/rook.svg" alt="เรือ (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/rook.svg" alt="เรือ (แบบตะวันตก)"></td>
+              <td><code>+R</code></td>
+              <td><code lang="ja">龍</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-rook.svg" alt="เรือเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-rook.svg" alt="เรือเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+
+            <tr>
+              <th scope="row">โคน</th>
+              <td><code>B</code></td>
+              <td><code lang="ja">角</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/bishop.svg" alt="โคน (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/bishop.svg" alt="โคน (แบบตะวันตก)"></td>
+              <td><code>+B</code></td>
+              <td><code lang="ja">馬</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-bishop.svg" alt="โคนเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-bishop.svg" alt="โคนเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+
+            <tr>
+              <th scope="row">เงิน</th>
+              <td><code>S</code></td>
+              <td><code lang="ja">銀</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/silver-general.svg" alt="เงิน (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน (แบบตะวันตก)"></td>
+              <td><code>+S</code></td>
+              <td><code lang="ja">全</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-silver-general.svg" alt="เงินเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-silver-general.svg" alt="เงินเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+
+            <tr>
+              <th scope="row">ม้า</th>
+              <td><code>N</code></td>
+              <td><code lang="ja">桂</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/knight.svg" alt="ม้า (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/knight.svg" alt="ม้า (แบบตะวันตก)"></td>
+              <td><code>+N</code></td>
+              <td><code lang="ja">圭</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-knight.svg" alt="ม้าเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-knight.svg" alt="ม้าเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+
+            <tr>
+              <th scope="row">หอก</th>
+              <td><code>L</code></td>
+              <td><code lang="ja">香</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/lance.svg" alt="หอก (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/lance.svg" alt="หอก (แบบตะวันตก)"></td>
+              <td><code>+L</code></td>
+              <td><code lang="ja">杏</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-lance.svg" alt="หอกเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-lance.svg" alt="หอกเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+
+            <tr>
+              <th scope="row">เบี้ย</th>
+              <td><code>P</code></td>
+              <td><code lang="ja">歩</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/pawn.svg" alt="เบี้ย (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย (แบบตะวันตก)"></td>
+              <td><code>+P</code></td>
+              <td><code lang="ja">と</code></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/eastern/promoted-pawn.svg" alt="เบี้ยเลื่อนขั้น (แบบตะวันออก)"></td>
+              <td><img data-style="ogi" class="piece" src="img/sides/first/representations/western/promoted-pawn.svg" alt="เบี้ยเลื่อนขั้น (แบบตะวันตก)"></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="rules-of-the-game">
+        <h2>กฎการเล่น</h2>
+
+        <h3>วัตถุประสงค์</h3>
+
+        <p>
+          เป้าหมายของเกมคือการชนะโดย<strong>กินขุนของฝ่ายตรงข้าม</strong>
+          หรือโดยเงื่อนไขจบเกมอื่นๆ ตามที่กฎกำหนด
+          (เช่น ฝ่ายตรงข้ามยอมแพ้)
+        </p>
+
+        <p>
+          เราเรียกว่า<strong>รุกจน</strong>เมื่อตำแหน่งทำให้การกินขุนหลีกเลี่ยงไม่ได้
+          ไม่ว่าจะป้องกันอย่างไรก็ตาม
+        </p>
+
+        <h3>การตั้งเกม</h3>
+
+        <p>
+          เมื่อเริ่มเกม ผู้เล่นทั้งสองฝ่ายจะวางตัวหมากบนกระดาน
+          โดยแต่ละตัวหันหน้าไปทางฝั่งตรงข้าม
+        </p>
+
+        <p>
+          ตำแหน่งเริ่มต้นเป็นดังนี้:
+        </p>
+
+        <table class="squares">
+          <caption>
+            ตำแหน่งเริ่มต้นของเกมหมากรุกโกมาโย
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"><img class="piece" draggable="true" data-code="o:l" data-style="ogi" data-side="second" src="img/sides/second/representations/western/lance.svg" alt="หอก"></td>
+              <td class="square" data-coordinate="b8"><img class="piece" draggable="true" data-code="o:n" data-style="ogi" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="c8"><img class="piece" draggable="true" data-code="o:s" data-style="ogi" data-side="second" src="img/sides/second/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="d8"><img class="piece" draggable="true" data-code="o:i" data-style="ogi" data-side="second" src="img/sides/second/representations/western/princess.svg" alt="เจ้าหญิง"></td>
+              <td class="square" data-coordinate="e8"><img class="piece" draggable="true" data-code="o:k^" data-style="ogi" data-side="second" src="img/sides/second/representations/western/king.svg" alt="ขุน"></td>
+              <td class="square" data-coordinate="f8"><img class="piece" draggable="true" data-code="o:s" data-style="ogi" data-side="second" src="img/sides/second/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="g8"><img class="piece" draggable="true" data-code="o:n" data-style="ogi" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="h8"><img class="piece" draggable="true" data-code="o:l" data-style="ogi" data-side="second" src="img/sides/second/representations/western/lance.svg" alt="หอก"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"><img class="piece" draggable="true" data-code="o:r" data-style="ogi" data-side="second" src="img/sides/second/representations/western/rook.svg" alt="เรือ"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"><img class="piece" draggable="true" data-code="o:b" data-style="ogi" data-side="second" src="img/sides/second/representations/western/bishop.svg" alt="โคน"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="b6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="c6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="d6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="e6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="g6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="h6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="b3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="c3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="d3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="f3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="g3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="h3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"><img class="piece" draggable="true" data-code="O:B" data-style="ogi" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="โคน"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"><img class="piece" draggable="true" data-code="O:R" data-style="ogi" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="เรือ"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+              <td class="square" data-coordinate="b1"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="c1"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="d1"><img class="piece" draggable="true" data-code="O:I" data-style="ogi" data-side="first" src="img/sides/first/representations/western/princess.svg" alt="เจ้าหญิง"></td>
+              <td class="square" data-coordinate="e1"><img class="piece" draggable="true" data-code="O:K^" data-style="ogi" data-side="first" src="img/sides/first/representations/western/king.svg" alt="ขุน"></td>
+              <td class="square" data-coordinate="f1"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="g1"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="h1"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          หากไม่ได้ระบุไว้เป็นอย่างอื่น แผนภาพกระดานจะแสดงจากมุมมองของ Sente ซึ่งอยู่ด้านล่างของแผนภาพ
+          คอลัมน์จะระบุด้วยตัวอักษร <code>a</code> ถึง <code>h</code> จากซ้ายไปขวา และแถวจะระบุด้วยตัวเลข <code>1</code> ถึง <code>8</code> จากล่างขึ้นบน (จากมุมมองของ Sente)
+          ในแผนภาพการเคลื่อนที่ ช่องที่เน้นสีจะแสดงจุดหมายปลายทางที่เป็นไปได้ของตัวหมากที่แสดง (การเคลื่อนที่ หรือการกินหากมีตัวหมากของฝ่ายตรงข้ามอยู่)
+        </p>
+
+        <h4>ฝั่งผู้เล่นคนแรก (Sente)</h4>
+
+        <ul>
+          <li>แถว 1: หอก, ม้า, เงิน, เจ้าหญิง, ขุน, เงิน, ม้า, หอก</li>
+          <li>แถว 2: โคนหนึ่งตัวและเรือหนึ่งตัว ช่องอื่นๆ ว่าง</li>
+          <li>แถว 3: เบี้ยอยู่ทุกช่อง</li>
+        </ul>
+
+        <h4>ฝั่งผู้เล่นคนที่สอง (Gote)</h4>
+
+        <ul>
+          <li>แถว 8: หอก, ม้า, เงิน, เจ้าหญิง, ขุน, เงิน, ม้า, หอก</li>
+          <li>แถว 7: เรือหนึ่งตัวและโคนหนึ่งตัว ช่องอื่นๆ ว่าง</li>
+          <li>แถว 6: เบี้ยอยู่ทุกช่อง</li>
+        </ul>
+
+        <h3>เกมให้เปรียบ</h3>
+
+        <p>
+          เกมให้เปรียบคือเกมที่ผู้เล่นฝีมือดีกว่ายอมให้
+          ข้อได้เปรียบทางวัตถุแก่คู่ต่อสู้ตั้งแต่เริ่มต้น เพื่อให้โอกาสชนะเท่าเทียมกันมากขึ้น
+        </p>
+
+        <h4>ข้อได้เปรียบ</h4>
+
+        <p>
+          ในหมากรุกโกมาโย ข้อได้เปรียบนี้โดยทั่วไปจะอยู่ในรูปแบบของการเลื่อนขั้นตัวหมากหนึ่งตัวหรือมากกว่า
+          ก่อนเริ่มเกม
+        </p>
+
+        <h4>ตัวอย่าง</h4>
+
+        <p>
+          ในตัวอย่างด้านล่าง Gote (ผู้เล่นฝีมือดีกว่า) ได้ให้ข้อได้เปรียบแก่ Sente
+          (ผู้เล่นฝีมืออ่อนกว่า) โดยยอมให้เริ่มเกมด้วยเรือและโคนที่เลื่อนขั้นแล้ว
+        </p>
+
+        <table class="squares">
+          <caption>
+            Sente เริ่มเกมด้วยโคนและเรือที่เลื่อนขั้นแล้ว
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"><img class="piece" draggable="true" data-code="o:l" data-style="ogi" data-side="second" src="img/sides/second/representations/western/lance.svg" alt="หอก"></td>
+              <td class="square" data-coordinate="b8"><img class="piece" draggable="true" data-code="o:n" data-style="ogi" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="c8"><img class="piece" draggable="true" data-code="o:s" data-style="ogi" data-side="second" src="img/sides/second/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="d8"><img class="piece" draggable="true" data-code="o:i" data-style="ogi" data-side="second" src="img/sides/second/representations/western/princess.svg" alt="เจ้าหญิง"></td>
+              <td class="square" data-coordinate="e8"><img class="piece" draggable="true" data-code="o:k^" data-style="ogi" data-side="second" src="img/sides/second/representations/western/king.svg" alt="ขุน"></td>
+              <td class="square" data-coordinate="f8"><img class="piece" draggable="true" data-code="o:s" data-style="ogi" data-side="second" src="img/sides/second/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="g8"><img class="piece" draggable="true" data-code="o:n" data-style="ogi" data-side="second" src="img/sides/second/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="h8"><img class="piece" draggable="true" data-code="o:l" data-style="ogi" data-side="second" src="img/sides/second/representations/western/lance.svg" alt="หอก"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"><img class="piece" draggable="true" data-code="o:r" data-style="ogi" data-side="second" src="img/sides/second/representations/western/rook.svg" alt="เรือ"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"><img class="piece" draggable="true" data-code="o:b" data-style="ogi" data-side="second" src="img/sides/second/representations/western/bishop.svg" alt="โคน"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="b6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="c6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="d6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="e6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="g6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="h6"><img class="piece" draggable="true" data-code="o:p" data-style="ogi" data-side="second" src="img/sides/second/representations/western/pawn.svg" alt="เบี้ย"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="b3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="c3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="d3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="f3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="g3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="h3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"><img class="piece" draggable="true" data-code="O:+B" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-bishop.svg" alt="โคนเลื่อนขั้น"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"><img class="piece" draggable="true" data-code="O:+R" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-rook.svg" alt="เรือเลื่อนขั้น"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+              <td class="square" data-coordinate="b1"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="c1"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="d1"><img class="piece" draggable="true" data-code="O:I" data-style="ogi" data-side="first" src="img/sides/first/representations/western/princess.svg" alt="เจ้าหญิง"></td>
+              <td class="square" data-coordinate="e1"><img class="piece" draggable="true" data-code="O:K^" data-style="ogi" data-side="first" src="img/sides/first/representations/western/king.svg" alt="ขุน"></td>
+              <td class="square" data-coordinate="f1"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="g1"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="h1"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>การเคลื่อนที่ของตัวหมาก</h3>
+
+        <p>
+          ในแต่ละตา ผู้เล่นสามารถเลือกเคลื่อนที่ตัวหมากที่อยู่บนกระดานอยู่แล้ว
+          (การเคลื่อนที่นี้อาจนำไปสู่การเลื่อนขั้น การกิน หรือทั้งสองอย่าง)
+          หรือวางตัวหมากที่ถูกกินไว้ก่อนหน้านี้กลับลงบนกระดาน
+          ผู้เล่นจะสลับกันเดิน เมื่อเดินเสร็จแล้วก็เป็นตาของอีกฝ่ายทันที
+        </p>
+
+        <h4>ขุน</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของขุน
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square focus" data-coordinate="e3"></td>
+              <td class="square focus" data-coordinate="f3"></td>
+              <td class="square focus" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square focus" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"><img class="piece" draggable="true" data-code="O:K^" data-style="ogi" data-side="first" src="img/sides/first/representations/western/king.svg" alt="ขุน"></td>
+              <td class="square focus" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square focus" data-coordinate="e1"></td>
+              <td class="square focus" data-coordinate="f1"></td>
+              <td class="square focus" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>ขุน</strong> (<code lang="ja">玉</code>/<code lang="ja">王</code>) เคลื่อนที่ได้หนึ่งช่องต่อตา
+          ไปในทิศทางใดก็ได้ (หน้า, หลัง, ซ้าย, ขวา หรือแนวทแยง)
+          และกินในลักษณะเดียวกัน
+        </p>
+
+        <h4>เจ้าหญิง</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเจ้าหญิง
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square focus" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square focus" data-coordinate="b7"></td>
+              <td class="square focus" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square focus" data-coordinate="b6"></td>
+              <td class="square focus" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square focus" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"><img class="piece" draggable="true" data-code="O:I" data-style="ogi" data-side="first" src="img/sides/first/representations/western/princess.svg" alt="เจ้าหญิง"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square focus" data-coordinate="b4"></td>
+              <td class="square focus" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square focus" data-coordinate="e4"></td>
+              <td class="square focus" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square focus" data-coordinate="b3"></td>
+              <td class="square focus" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square focus" data-coordinate="e3"></td>
+              <td class="square focus" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square focus" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square focus" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เจ้าหญิง</strong> (<code lang="ja">姫</code>) เคลื่อนที่ได้เหมือนโคนหรือเหมือนม้า
+          อย่างไรก็ตาม ต่างจาก<strong>ม้า</strong>ในเกมนี้ (ที่จำกัดให้กระโดดไปข้างหน้าเท่านั้น) เจ้าหญิงสามารถกระโดดได้ทั้งแปดทิศทาง
+          ดังนั้นเจ้าหญิงสามารถเลื่อนไปตามแนวทแยงได้ไม่จำกัดระยะทาง (โดยไม่สามารถกระโดดข้ามตัวหมากอื่นได้)
+          หรือกระโดดเป็นรูปตัว "L" (สองช่องแล้วหนึ่งช่องตั้งฉาก) ไปในทิศทางใดก็ได้
+          และกินในลักษณะเดียวกัน
+        </p>
+
+        <h4>เจ้าหญิงเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเจ้าหญิงเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square focus" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square focus" data-coordinate="b7"></td>
+              <td class="square focus" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square focus" data-coordinate="b6"></td>
+              <td class="square focus" data-coordinate="c6"></td>
+              <td class="square focus" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square focus" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square focus" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"><img class="piece" draggable="true" data-code="O:+I" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-princess.svg" alt="เจ้าหญิงเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square focus" data-coordinate="b4"></td>
+              <td class="square focus" data-coordinate="c4"></td>
+              <td class="square focus" data-coordinate="d4"></td>
+              <td class="square focus" data-coordinate="e4"></td>
+              <td class="square focus" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square focus" data-coordinate="b3"></td>
+              <td class="square focus" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square focus" data-coordinate="e3"></td>
+              <td class="square focus" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square focus" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square focus" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เจ้าหญิงเลื่อนขั้น</strong> (<code lang="ja">神</code>) ยังคงการเคลื่อนที่ทั้งหมด
+          ของเจ้าหญิง (แนวทแยงของโคนและการกระโดดของม้า) และ
+          ได้รับความสามารถเพิ่มเติมในการเคลื่อนที่หนึ่งช่องในแนวตั้งฉาก ไปข้างหน้า
+          ข้างหลัง ซ้าย หรือขวา และกินในลักษณะเดียวกัน
+        </p>
+
+        <h4>เรือ</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเรือ
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square focus" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square focus" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square focus" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a3"></td>
+              <td class="square focus" data-coordinate="b3"></td>
+              <td class="square focus" data-coordinate="c3"></td>
+              <td class="square focus" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:R" data-style="ogi" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="เรือ"></td>
+              <td class="square focus" data-coordinate="f3"></td>
+              <td class="square focus" data-coordinate="g3"></td>
+              <td class="square focus" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square focus" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square focus" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เรือ</strong> (<code lang="ja">飛</code>) เคลื่อนที่ได้หลายช่องตามต้องการ
+          ในแนวเส้นตรง ไปตามแถวหรือคอลัมน์เดียวกัน โดยไม่สามารถ
+          กระโดดข้ามตัวหมากอื่นได้ เรือกินโดยหยุดการเคลื่อนที่บนช่องที่มี
+          ตัวหมากของฝ่ายตรงข้าม
+        </p>
+
+        <h4>เรือเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเรือเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square focus" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square focus" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square focus" data-coordinate="d4"></td>
+              <td class="square focus" data-coordinate="e4"></td>
+              <td class="square focus" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a3"></td>
+              <td class="square focus" data-coordinate="b3"></td>
+              <td class="square focus" data-coordinate="c3"></td>
+              <td class="square focus" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:+R" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-rook.svg" alt="เรือเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="f3"></td>
+              <td class="square focus" data-coordinate="g3"></td>
+              <td class="square focus" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square focus" data-coordinate="d2"></td>
+              <td class="square focus" data-coordinate="e2"></td>
+              <td class="square focus" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square focus" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เรือเลื่อนขั้น</strong> (<code lang="ja">龍</code>) ยังคงการเคลื่อนที่ทั้งหมด
+          ของเรือ และได้รับความสามารถเพิ่มเติมในการเคลื่อนที่หนึ่งช่องในแนวทแยง
+          ไปในทิศทางใดก็ได้ และกินในลักษณะเดียวกัน
+        </p>
+
+        <h4>โคน</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของโคน
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square focus" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square focus" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square focus" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square" data-coordinate="e6"></td>
+              <td class="square focus" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square focus" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square focus" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"><img class="piece" draggable="true" data-code="O:B" data-style="ogi" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="โคน"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square focus" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square focus" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square focus" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square focus" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square focus" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>โคน</strong> (<code lang="ja">角</code>) เคลื่อนที่ในแนวทแยงได้หลายช่อง
+          ตามต้องการ โดยไม่สามารถกระโดดข้ามตัวหมากอื่นได้ และกินโดย
+          หยุดบนช่องที่มีตัวหมากของฝ่ายตรงข้าม
+        </p>
+
+        <h4>โคนเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของโคนเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square focus" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square focus" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square focus" data-coordinate="c7"></td>
+              <td class="square focus" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square focus" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"><img class="piece" draggable="true" data-code="O:+B" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-bishop.svg" alt="โคนเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square focus" data-coordinate="c5"></td>
+              <td class="square focus" data-coordinate="d5"></td>
+              <td class="square focus" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square focus" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square focus" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square focus" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square focus" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>โคนเลื่อนขั้น</strong> (<code lang="ja">馬</code>) ยังคงการเคลื่อนที่ทั้งหมดของ
+          โคน และได้รับความสามารถเพิ่มเติมในการเคลื่อนที่หนึ่งช่องในแนวเส้นตรง
+          ไปตามแถวหรือคอลัมน์ โคนเลื่อนขั้นกินในลักษณะเดียวกัน
+        </p>
+
+        <h4>เงิน</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเงิน
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square focus" data-coordinate="b6"></td>
+              <td class="square focus" data-coordinate="c6"></td>
+              <td class="square focus" data-coordinate="d6"></td>
+              <td class="square" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square focus" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square focus" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เงิน</strong> (<code lang="ja">銀</code>) เคลื่อนที่ได้หนึ่งช่อง
+          ในแนวทแยง (ไปข้างหน้าหรือข้างหลัง) หรือหนึ่งช่องตรงไปข้างหน้า รวมเป็น
+          จุดหมายปลายทางที่เป็นไปได้ห้าช่อง เงินไม่สามารถเคลื่อนที่ในแนวนอน
+          หรือถอยหลังเป็นเส้นตรงได้
+        </p>
+
+        <h4>เงินเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเงินเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square focus" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="O:+S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-silver-general.svg" alt="เงินเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square focus" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เงินเลื่อนขั้น</strong> (<code lang="ja">全</code>) เคลื่อนที่ได้หนึ่งช่อง
+          ในแนวตั้งฉากไปในทิศทางใดก็ได้ หรือหนึ่งช่องในแนวทแยง
+          ไปข้างหน้า รวมเป็นจุดหมายปลายทางที่เป็นไปได้หกช่อง เงินเลื่อนขั้นไม่สามารถ
+          เคลื่อนที่ในแนวทแยงไปข้างหลังได้
+        </p>
+
+        <h4>ม้า</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของม้า
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square focus" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>ม้า</strong> (<code lang="ja">桂</code>) เคลื่อนที่โดยการกระโดด โดยเดินหน้า
+          สองช่องไปข้างหน้า แล้วหนึ่งช่องไปทางซ้ายหรือขวา
+          ในการเคลื่อนที่ครั้งเดียว ม้าสามารถไปได้เฉพาะข้างหน้าเท่านั้น จึงมี
+          จุดหมายปลายทางได้สูงสุดสองช่อง ต่างจากม้าในหมากรุกสากล
+          ม้าในเกมนี้ไม่สามารถไปด้านข้างหรือถอยหลังได้ ม้าและ<strong>เจ้าหญิง</strong>เป็นตัวหมาก
+          เพียงสองตัวที่สามารถข้ามตัวหมากอื่นได้ ม้าไม่ถูกขวางโดย
+          ตัวหมากที่อยู่ข้างหน้า แต่ก็ไม่สามารถกินตัวหมากนั้นได้เช่นกัน
+        </p>
+
+        <h4>ม้าเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของม้าเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square focus" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="O:+N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-knight.svg" alt="ม้าเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square focus" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>ม้าเลื่อนขั้น</strong> (<code lang="ja">圭</code>) เคลื่อนที่เหมือน
+          เงินเลื่อนขั้นทุกประการ ต่างจากม้าที่ยังไม่เลื่อนขั้น
+          ม้าเลื่อนขั้นไม่สามารถกระโดดข้ามตัวหมากอื่นได้อีกต่อไป
+        </p>
+
+        <h4>หอก</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของหอก
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square focus" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square focus" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square focus" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square focus" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square focus" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>หอก</strong> (<code lang="ja">香</code>) เคลื่อนที่ได้หลายช่องตามต้องการ
+          ในแนวเส้นตรง เฉพาะไปข้างหน้าเท่านั้น ตามคอลัมน์ของตัวเอง หอก
+          ไม่สามารถถอยหลังหรือเคลื่อนที่ไปด้านข้างได้ และไม่สามารถกระโดดข้าม
+          ตัวหมากอื่นได้ หอกกินโดยหยุดการเคลื่อนที่บนช่องที่มีตัวหมากของฝ่ายตรงข้าม
+        </p>
+
+        <h4>หอกเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของหอกเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square focus" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="O:+L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-lance.svg" alt="หอกเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square focus" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          การเคลื่อนที่ของ<strong>หอกเลื่อนขั้น</strong> (<code lang="ja">杏</code>)
+          เหมือนกับ<strong>เงินเลื่อนขั้น</strong>ทุกประการ
+        </p>
+
+        <h4>เบี้ย</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเบี้ย
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square" data-coordinate="e7"></td>
+              <td class="square" data-coordinate="f7"></td>
+              <td class="square" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"></td>
+              <td class="square" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square focus" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เบี้ย</strong> (<code lang="ja">歩</code>) เคลื่อนที่ได้หนึ่งช่อง
+          ตรงไปข้างหน้า ตามคอลัมน์เดียวกัน และไม่สามารถถอยหลังได้เลย เบี้ย
+          กินในลักษณะเดียวกัน โดยเดินหน้าหนึ่งช่องไปยังตัวหมาก
+          ของฝ่ายตรงข้าม
+        </p>
+
+        <h4>เบี้ยเลื่อนขั้น</h4>
+
+        <table class="squares">
+          <caption>
+            การเคลื่อนที่ของเบี้ยเลื่อนขั้น
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square" data-coordinate="a8"></td>
+              <td class="square" data-coordinate="b8"></td>
+              <td class="square" data-coordinate="c8"></td>
+              <td class="square" data-coordinate="d8"></td>
+              <td class="square" data-coordinate="e8"></td>
+              <td class="square" data-coordinate="f8"></td>
+              <td class="square" data-coordinate="g8"></td>
+              <td class="square" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a7"></td>
+              <td class="square" data-coordinate="b7"></td>
+              <td class="square" data-coordinate="c7"></td>
+              <td class="square" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square focus" data-coordinate="g7"></td>
+              <td class="square" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a6"></td>
+              <td class="square" data-coordinate="b6"></td>
+              <td class="square" data-coordinate="c6"></td>
+              <td class="square" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square" data-coordinate="f6"><img class="piece" draggable="true" data-code="O:+P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/promoted-pawn.svg" alt="เบี้ยเลื่อนขั้น"></td>
+              <td class="square focus" data-coordinate="g6"></td>
+              <td class="square" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square focus" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"></td>
+              <td class="square" data-coordinate="b3"></td>
+              <td class="square" data-coordinate="c3"></td>
+              <td class="square" data-coordinate="d3"></td>
+              <td class="square" data-coordinate="e3"></td>
+              <td class="square" data-coordinate="f3"></td>
+              <td class="square" data-coordinate="g3"></td>
+              <td class="square" data-coordinate="h3"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"></td>
+              <td class="square" data-coordinate="b1"></td>
+              <td class="square" data-coordinate="c1"></td>
+              <td class="square" data-coordinate="d1"></td>
+              <td class="square" data-coordinate="e1"></td>
+              <td class="square" data-coordinate="f1"></td>
+              <td class="square" data-coordinate="g1"></td>
+              <td class="square" data-coordinate="h1"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          <strong>เบี้ยเลื่อนขั้น</strong> (<code lang="ja">と</code>) เคลื่อนที่เหมือน
+          <strong>เงินเลื่อนขั้น</strong> (<code lang="ja">全</code>) ทุกประการ
+          คือหนึ่งช่องไปข้างหน้า ข้างหลัง ซ้าย หรือขวา หรือในแนวทแยง
+          ไปข้างหน้า แต่ไม่สามารถเคลื่อนที่ในแนวทแยงไปข้างหลังได้
+        </p>
+
+        <h3>การเลื่อนขั้น</h3>
+
+        <p>
+          <strong>เขตเลื่อนขั้น</strong>ของผู้เล่นคือสามแถวสุดท้าย
+          ของฝั่งตรงข้าม ซึ่งเป็นแถวที่ตัวหมากของ
+          ฝ่ายตรงข้ามวางอยู่ตอนเริ่มเกม
+          เมื่อตัวหมากเข้าสู่เขตนี้ เคลื่อนที่ภายในเขต หรือออกจากเขตระหว่าง
+          การเดิน (แต่ไม่ใช่เมื่อถูกวางหมาก) ตัวหมากนั้นสามารถเลื่อนขั้นได้
+          เมื่อจบการเดินนั้น การเลื่อนขั้นทำโดยการพลิกตัวหมาก
+          เพื่อแสดงตัวอักษรของด้านที่เลื่อนขั้นแล้ว
+        </p>
+
+        <p>
+          อย่างไรก็ตาม ในบางกรณี การเลื่อนขั้นจะกลายเป็นข้อบังคับ หากตัวหมาก
+          ไปถึงช่องที่จะไม่สามารถทำการเคลื่อนที่ใดๆ ได้อย่างถูกกฎ
+          ในตาต่อไปโดยไม่เลื่อนขั้น ตัวหมากนั้นจะต้องเลื่อนขั้น
+        </p>
+
+        <table class="squares">
+          <caption>
+            เขตเลื่อนขั้นของ Sente (สีเหลือง)
+          </caption>
+
+          <tbody>
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a8"></td>
+              <td class="square focus" data-coordinate="b8"></td>
+              <td class="square focus" data-coordinate="c8"></td>
+              <td class="square focus" data-coordinate="d8"></td>
+              <td class="square focus" data-coordinate="e8"></td>
+              <td class="square focus" data-coordinate="f8"></td>
+              <td class="square focus" data-coordinate="g8"></td>
+              <td class="square focus" data-coordinate="h8"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a7"></td>
+              <td class="square focus" data-coordinate="b7"></td>
+              <td class="square focus" data-coordinate="c7"></td>
+              <td class="square focus" data-coordinate="d7"></td>
+              <td class="square focus" data-coordinate="e7"></td>
+              <td class="square focus" data-coordinate="f7"></td>
+              <td class="square focus" data-coordinate="g7"></td>
+              <td class="square focus" data-coordinate="h7"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square focus" data-coordinate="a6"></td>
+              <td class="square focus" data-coordinate="b6"></td>
+              <td class="square focus" data-coordinate="c6"></td>
+              <td class="square focus" data-coordinate="d6"></td>
+              <td class="square focus" data-coordinate="e6"></td>
+              <td class="square focus" data-coordinate="f6"></td>
+              <td class="square focus" data-coordinate="g6"></td>
+              <td class="square focus" data-coordinate="h6"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a5"></td>
+              <td class="square" data-coordinate="b5"></td>
+              <td class="square" data-coordinate="c5"></td>
+              <td class="square" data-coordinate="d5"></td>
+              <td class="square" data-coordinate="e5"></td>
+              <td class="square" data-coordinate="f5"></td>
+              <td class="square" data-coordinate="g5"></td>
+              <td class="square" data-coordinate="h5"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a4"></td>
+              <td class="square" data-coordinate="b4"></td>
+              <td class="square" data-coordinate="c4"></td>
+              <td class="square" data-coordinate="d4"></td>
+              <td class="square" data-coordinate="e4"></td>
+              <td class="square" data-coordinate="f4"></td>
+              <td class="square" data-coordinate="g4"></td>
+              <td class="square" data-coordinate="h4"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="b3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="c3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="d3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="e3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="f3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="g3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+              <td class="square" data-coordinate="h3"><img class="piece" draggable="true" data-code="O:P" data-style="ogi" data-side="first" src="img/sides/first/representations/western/pawn.svg" alt="เบี้ย"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a2"></td>
+              <td class="square" data-coordinate="b2"><img class="piece" draggable="true" data-code="O:B" data-style="ogi" data-side="first" src="img/sides/first/representations/western/bishop.svg" alt="โคน"></td>
+              <td class="square" data-coordinate="c2"></td>
+              <td class="square" data-coordinate="d2"></td>
+              <td class="square" data-coordinate="e2"></td>
+              <td class="square" data-coordinate="f2"></td>
+              <td class="square" data-coordinate="g2"><img class="piece" draggable="true" data-code="O:R" data-style="ogi" data-side="first" src="img/sides/first/representations/western/rook.svg" alt="เรือ"></td>
+              <td class="square" data-coordinate="h2"></td>
+            </tr>
+
+            <tr class="rank">
+              <td class="square" data-coordinate="a1"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+              <td class="square" data-coordinate="b1"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="c1"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="d1"><img class="piece" draggable="true" data-code="O:I" data-style="ogi" data-side="first" src="img/sides/first/representations/western/princess.svg" alt="เจ้าหญิง"></td>
+              <td class="square" data-coordinate="e1"><img class="piece" draggable="true" data-code="O:K^" data-style="ogi" data-side="first" src="img/sides/first/representations/western/king.svg" alt="ขุน"></td>
+              <td class="square" data-coordinate="f1"><img class="piece" draggable="true" data-code="O:S" data-style="ogi" data-side="first" src="img/sides/first/representations/western/silver-general.svg" alt="เงิน"></td>
+              <td class="square" data-coordinate="g1"><img class="piece" draggable="true" data-code="O:N" data-style="ogi" data-side="first" src="img/sides/first/representations/western/knight.svg" alt="ม้า"></td>
+              <td class="square" data-coordinate="h1"><img class="piece" draggable="true" data-code="O:L" data-style="ogi" data-side="first" src="img/sides/first/representations/western/lance.svg" alt="หอก"></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>การกินและตัวหมากในมือ</h3>
+
+        <p>
+          เมื่อตัวหมากถูกกิน มันจะไม่ออกจากเกมไปอย่างถาวร
+          ตัวหมากจะถูกนำออกจากกระดานและเก็บไว้ในกองสำรองของผู้เล่นที่กินมันมา
+          เราเรียกว่าตัวหมากนั้นถูกเก็บไว้<strong>ในมือ</strong>
+          ในภาษาญี่ปุ่น ตัวหมากเหล่านี้เรียกว่า
+          <ruby>持ち駒<rp>(</rp><rt>mochigoma</rt><rp>)</rp></ruby> หรือ
+          <ruby>手駒<rp>(</rp><rt>tegoma</rt><rp>)</rp></ruby>
+        </p>
+
+        <p>
+          ตามกฎทั่วไป ตัวหมากที่ถูกกิน<strong>จะกลับสู่สถานะไม่เลื่อนขั้น</strong>
+          ในขณะที่ถูกกิน ดังนั้น ตัวหมากที่เลื่อนขั้นแล้วเมื่อถูกกินจะถูกลดขั้น
+          ทันทีในมือของผู้เล่น (เช่น เงินเลื่อนขั้น
+          จะกลายเป็นเงินที่ไม่เลื่อนขั้น)
+        </p>
+
+        <p>
+          <strong>ข้อยกเว้น: สิทธิ์ของขุน</strong>
+          เมื่อขุนเป็นผู้กินตัวหมากที่เลื่อนขั้นแล้ว ผู้เล่นสามารถเลือกได้
+          จะลดขั้นตามปกติ หรือใช้ <q>สิทธิ์ของขุน</q> และ
+          <strong>เก็บรักษาไว้ในสถานะเลื่อนขั้น</strong>ในมือ
+        </p>
+
+        <p>
+          แทนที่จะเคลื่อนที่ตัวหมากที่อยู่บนกระดานอยู่แล้ว ผู้เล่นสามารถในตาของตน
+          <strong>วางหมาก</strong>ตัวหมากที่มีอยู่ในมือ โดยวางลงบน
+          ช่องว่าง และตัวหมากนั้นจะกลายเป็นตัวหมากที่ใช้งานได้
+          การวางหมากจะรักษา<strong>สถานะที่แน่นอน</strong>ของตัวหมากในมือในขณะ
+          ที่วางลง (เลื่อนขั้นหรือไม่เลื่อนขั้น) การวางหมากแต่ละครั้งนับเป็นหนึ่งตา
+        </p>
+
+        <p>
+          การวางหมากไม่สามารถกินตัวหมากของฝ่ายตรงข้ามได้ (ช่องที่วางต้องว่าง)
+          และไม่สามารถเลื่อนขั้นทันที แม้ว่าจะวางหมากในเขตเลื่อนขั้นก็ตาม
+          การวางหมากตัวหมากที่ไม่เลื่อนขั้นในมือไปยังเขตเลื่อนขั้นจะไม่ทำให้เกิดการเลื่อนขั้น
+          อย่างไรก็ตาม ตัวหมากที่เลื่อนขั้นแล้วในมือจะถูกวางโดยยังคงเลื่อนขั้นอยู่
+          จากจุดนี้เป็นต้นไป ตัวหมากนั้นสามารถกินและเลื่อนขั้นได้ในตา
+          ต่อๆ ไป เหมือนกับตัวหมากอื่นๆ ในเกม
+        </p>
+
+        <h4>ข้อจำกัดในการวางหมาก</h4>
+
+        <p>
+          ตัวหมากบางตัวไม่สามารถวางหมากได้ทุกที่บนกระดาน
+          ข้อจำกัดต่อไปนี้มีผลบังคับใช้:
+        </p>
+
+        <ul>
+          <li>
+            <strong>ตัวหมากที่ไม่มีการเคลื่อนที่ที่เป็นไปได้
+              (<ruby>行き所のない駒<rp>(</rp><rt>ikidokorononaikoma</rt><rp>)</rp></ruby>):</strong>
+            หอกที่ไม่เลื่อนขั้นและม้าที่ไม่เลื่อนขั้นไม่สามารถวางหมากบนแถวสุดท้ายได้ (แถวที่ 8 สำหรับ Sente, แถวที่ 1 สำหรับ Gote)
+            และม้าที่ไม่เลื่อนขั้นก็ไม่สามารถวางหมากบนแถวรองสุดท้ายได้เช่นกัน (แถวที่ 7 สำหรับ Sente, แถวที่ 2 สำหรับ Gote)
+            ในตำแหน่งเหล่านี้ การเคลื่อนที่ที่ไปได้เฉพาะข้างหน้าเท่านั้นจะทำให้ไม่มี
+            การเดินที่ถูกกฎในตาต่อไป
+          </li>
+          <li>
+            <strong>เบี้ยที่ไม่เลื่อนขั้น:</strong>
+            เบี้ยที่ไม่เลื่อนขั้นไม่สามารถวางหมากได้เลย
+            เบี้ยที่ไม่เลื่อนขั้นที่ถูกกินจึงยังคงอยู่ในมือ แต่ใช้งานไม่ได้ (ไม่สามารถกลับเข้าสู่กระดานได้)
+            อย่างไรก็ตาม หากขุนกินเบี้ยที่เลื่อนขั้นแล้ว และผู้เล่นเลือกใช้ <q>สิทธิ์ของขุน</q> เพื่อเก็บรักษาไว้ในรูปแบบเลื่อนขั้นในมือ เบี้ยเลื่อนขั้นนั้นก็สามารถวางหมากได้ในภายหลัง
+          </li>
+        </ul>
+
+        <h3>รุก</h3>
+
+        <p>
+          ขุนอยู่ในสถานะ<strong>รุก</strong>
+          (<ruby>王手<rp>(</rp><rt>ōte</rt><rp>)</rp></ruby>)
+          เมื่อมันอาจถูกกินในตาถัดไปหากผู้เล่นไม่ตอบสนอง
+          ในหมากรุกโกมาโย การรุกเป็นข้อมูลของเกม ไม่จำเป็นต้องประกาศ
+          และไม่ผิดกฎที่จะวางหรือปล่อยให้ขุนของตนเองอยู่ในสถานะรุก
+        </p>
+
+        <p>
+          ดังนั้น หากผู้เล่นไม่สังเกตว่าขุนของตนถูกคุกคาม ฝ่ายตรงข้ามสามารถ
+          กินมันในตาถัดไปและ<strong>ชนะเกมทันที</strong>
+          เราเรียกว่า<strong>รุกจน</strong>
+          (<ruby>王手詰め<rp>(</rp><rt>ōte-zume</rt><rp>)</rp></ruby>)
+          เมื่อไม่ว่าจะป้องกันอย่างไร การกินขุนก็หลีกเลี่ยงไม่ได้
+        </p>
+
+        <h3>การจบเกม</h3>
+
+        <p>
+          เกมหมากรุกโกมาโยส่วนใหญ่จบลงด้วย<strong>การกินขุน</strong>
+          (มักเป็นผลจากสถานการณ์รุกจน) หรือโดย<strong>การยอมแพ้</strong>
+          ของผู้เล่นที่อยู่ในสถานะเสียเปรียบ เนื่องจากตัวหมากที่ถูกกินยังคงอยู่ในมือ
+          และสามารถวางหมากได้ จึงเป็นเรื่องปกติที่จะมีวัตถุเพียงพอ
+          สำหรับเตรียมการโจมตีชี้ขาด
+        </p>
+
+        <p>
+          เกมอาจจบลงได้เช่นกันหากผู้เล่นเดิน<strong>การเดินผิดกฎ</strong>
+          เกมจะหยุดทันทีและผู้เล่นที่ทำผิด<strong>แพ้</strong>เกม
+        </p>
+
+        <p>
+          สิ่งต่อไปนี้ถือเป็น<strong>การเดินผิดกฎ</strong> คือการกระทำใดๆ ที่ละเมิดกฎด้านล่าง (รายการครบถ้วนตามกฎในหน้านี้):
+        </p>
+
+        <ul>
+          <li>เล่นอย่างอื่นที่ไม่ใช่<strong>การเคลื่อนที่</strong>หรือ<strong>การวางหมาก</strong></li>
+          <li>เคลื่อนที่ตัวหมากออกนอกกระดาน หรือไปยังช่องที่ไม่ใช่จุดหมายปลายทางที่อนุญาตสำหรับประเภทและสถานะของมัน (เลื่อนขั้น/ไม่เลื่อนขั้น)</li>
+          <li>สำหรับตัวหมากระยะไกล (เรือ, โคน, หอก) <strong>ข้าม</strong>ตัวหมากอื่น เส้นทางต้องว่างจนถึงช่องปลายทาง</li>
+          <li>เคลื่อนที่ตัวหมากไปยังช่องที่มีตัวหมากฝ่ายเดียวกันอยู่</li>
+          <li>วางหมากบนช่องที่ไม่ว่าง (การวางหมากไม่สามารถกินได้)</li>
+          <li>วางหมากบนช่องที่การวางหมากนั้นถูกห้าม:
+            <ul>
+              <li>หอกที่ไม่เลื่อนขั้นและม้าที่ไม่เลื่อนขั้นบนแถวสุดท้าย (แถวที่ 8 สำหรับ Sente, แถวที่ 1 สำหรับ Gote)</li>
+              <li>ม้าที่ไม่เลื่อนขั้นบนแถวรองสุดท้าย (แถวที่ 7 สำหรับ Sente, แถวที่ 2 สำหรับ Gote)</li>
+              <li>เบี้ยที่ไม่เลื่อนขั้น (ทุกที่บนกระดาน)</li>
+            </ul>
+          </li>
+          <li>ใช้การเลื่อนขั้นเมื่อไม่ได้รับอนุญาต (เช่น ระหว่างการวางหมาก)</li>
+          <li>ไม่ใช้การเลื่อนขั้นเมื่อเป็น<strong>ข้อบังคับ</strong> คือเมื่อตัวหมากไปถึงช่องที่จะไม่มีการเคลื่อนที่ที่ถูกกฎในตาต่อไปโดยไม่เลื่อนขั้น (โดยทั่วไป: เบี้ยหรือหอกบนแถวสุดท้าย, ม้าบนสองแถวสุดท้าย)</li>
+          <li>เดินที่ละเมิดกฎ<strong>การซ้ำ</strong>ที่อธิบายด้านล่าง</li>
+        </ul>
+
+        <p>
+          <strong>การซ้ำ</strong>เป็นสิ่งต้องห้าม
+          การเดินผิดกฎหากมันทำซ้ำการเดินที่เคยเล่นไปแล้วในเกมอย่างแม่นยำ
+          — กล่าวคือหากมันเกี่ยวข้องกับตัวหมากเดียวกัน (หรือในกรณีของการวางหมาก ตัวหมากประเภทเดียวกันและสถานะเดียวกัน)
+          ช่องเริ่มต้นเดียวกัน ช่องปลายทางเดียวกัน และตัวเลือกการเลื่อนขั้นเดียวกัน —
+          และตำแหน่งที่ได้เหมือนกับที่เคยได้ก่อนหน้านี้
+          โดย<em>ตำแหน่ง</em>หมายถึงชุดของตัวหมากทั้งหมดที่อยู่บนกระดานและสถานะของมัน (เลื่อนขั้นหรือไม่)
+          ตัวหมากที่ถืออยู่ในมือของผู้เล่นแต่ละคน (และสถานะของมัน) รวมถึงฝ่ายที่ต้องเดิน
+          ผู้เล่นที่ทำการซ้ำดังกล่าว<strong>แพ้</strong>เกมทันที
+        </p>
+
+        <p>
+          สุดท้าย หาก<strong>50 ตาของผู้เล่นแต่ละคน</strong> (คือ<strong>100 ครึ่งตา</strong>) ถูกเล่น<strong>โดยไม่มีการกินใดๆ</strong> และ<strong>ไม่มีการเดินเบี้ยที่ไม่เลื่อนขั้น</strong>
+          เกมอาจถูกประกาศว่าเสมอ
+        </p>
+      </section>
+
+      <section id="cultural-narrative-and-urban-legend">
+        <h2>เรื่องเล่าทางวัฒนธรรมและตำนานเมือง</h2>
+
+        <p>
+          หมากรุกโกมาโยยังคงรักษาหลักการพื้นฐานของโชกิ แต่มีความแตกต่าง
+          ด้วยเรื่องเล่าร่วมสมัยมากกว่าต้นกำเนิดทางประวัติศาสตร์ที่มีเอกสารยืนยัน
+          เกมนี้ได้รับการกำหนดรูปแบบและตั้งชื่อโดยนักเขียนชาวฝรั่งเศส Cyril Veltin ซึ่ง
+          <a href="https://cyrilvelt.in/posts/2025-02-15/a-strange-encounter-at-utsubo-park/" hreflang="en" rel="external related" title="A Strange Encounter at Utsubo Park">เล่าว่า</a>
+          ได้ค้นพบมันขณะสังเกตการเล่นเกมแปลกประหลาดในสวนสาธารณะแห่งหนึ่งที่โอซากะในคืนฤดูร้อน
+        </p>
+
+        <p>
+          หัวใจของเรื่องเล่าทางวัฒนธรรมนี้คือตำนานเมือง
+          ที่เกี่ยวข้องกับโยไคชื่อ
+          <a href="https://th.komayo.page/len/" hreflang="th" rel="external related" title="นางฟ้าแห่งหมากรุกโกมาโย">โกมาโย</a> ซึ่ง
+          บางครั้งจะเชิญผู้เล่นมาเล่นหมากรุกโกมาโยใต้แสงจันทร์
+        </p>
+
+        <picture>
+          <source type="image/webp" srcset="img/komayo-moonlit-ogi-game-legend-small.webp" media="(max-width: 512px)" height="512" width="512">
+          <source type="image/webp" srcset="img/komayo-moonlit-ogi-game-legend-large.webp" media="(min-width: 512px)" height="1024" width="1024">
+
+          <img
+            src="img/komayo-moonlit-ogi-game-legend-fallback.jpg"
+            alt="โกมาโยผู้ลึกลับเชิญผู้เล่นมาเล่นหมากรุกโกมาโยอันน่าหลงใหลใต้แสงพระจันทร์เต็มดวง"
+            title="ตำนานของโกมาโย: เกมหมากรุกโกมาโยอันมนต์สะกดใต้แสงพระจันทร์เต็มดวง"
+            height="1024"
+            width="1024">
+        </picture>
+
+        <p>
+          ผู้เล่นบางคนอ้างว่าเคยเห็นเธอ
+          บางคนไม่เชื่อ
+        </p>
+      </section>
+    </article>
+
+    <nav aria-label="เลือกภาษา">
+      <p>มีให้บริการในภาษาอื่นๆ ด้วย:</p>
+
+      <ul>
+        <li><a title="เปลี่ยนเป็นภาษาอังกฤษ" href="https://en.ogi.page/" lang="en">English</a></li>
+        <li><a title="เปลี่ยนเป็นภาษาฝรั่งเศส" href="https://fr.ogi.page/" lang="fr">Français</a></li>
+        <li><a title="เปลี่ยนเป็นภาษาญี่ปุ่น" href="https://ja.ogi.page/" lang="ja">日本語</a></li>
+        <!-- <li><a title="เปลี่ยนเป็นภาษาไทย" href="https://th.ogi.page/" lang="th">ภาษาไทย</a></li> -->
+        <li><a title="เปลี่ยนเป็นภาษาจีน" href="https://zh.ogi.page/" lang="zh">中文</a></li>
+      </ul>
+    </nav>
+
+    <footer>
+      <p>
+        กฎของเกมหมากรุกโกมาโย ชื่อ และโลโก้ของมันถูกวางไว้ในสาธารณสมบัติโดยสมัครใจ
+        อนุญาตให้นำไปใช้ซ้ำ ดัดแปลง หรือเผยแพร่ได้โดยไม่มีข้อจำกัด
+      </p>
+    </footer>
+  </body>
+</html>
